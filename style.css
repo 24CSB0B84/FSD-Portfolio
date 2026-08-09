@@ -143,26 +143,6 @@ ul {
   outline: none;
 }
 
-.scroll-indicator {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-.scroll-line {
-  display: block;
-  width: 2px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.5);
-  animation: scrollPulse 1.8s ease-in-out infinite;
-}
-
-@keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
-  50%      { opacity: 1;   transform: scaleY(1); }
-}
 
 /*  SHARED SECTION STYLES */
 .section {
@@ -221,23 +201,6 @@ ul {
   gap: 48px;
 }
 
-.about-avatar {
-  flex-shrink: 0;
-}
-
-.avatar-placeholder {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #C44B5C, #E88594);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #fff;
-  box-shadow: 0 6px 28px rgba(196, 75, 92, 0.35);
-}
 
 .about-text p {
   font-size: 0.95rem;
