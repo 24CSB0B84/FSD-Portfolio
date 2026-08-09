@@ -1,0 +1,83 @@
+.about-page {
+  color: var(--clr-text-body);
+  min-height: 100vh;
+}
+
+/* ── Section title underlines ── */
+.section-title {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.title-crimson::after { background: var(--clr-accent-about); }
+.title-teal::after   { background: var(--clr-accent-skills); }
+.title-blue::after   { background: var(--clr-accent-tools); }
+
+/* ── About ── */
+.about-section {
+  background: var(--clr-bg-about);
+  padding: 100px 24px 80px;
+  transition: background 0.4s;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.about-text p {
+  margin-bottom: 14px;
+  color: #cdb0b4;
+}
+
+[data-theme="light"] .about-text p {
+  color: #7a4a50;
+}
+
+/* ── Skills ── */
+.skills-section {
+  background: var(--clr-bg-skills);
+  padding: 80px 24px;
+  transition: background 0.4s;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Tools ── */
+.tools-section {
+  background: var(--clr-bg-tools);
+  padding: 80px 24px;
+  transition: background 0.4s;
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}

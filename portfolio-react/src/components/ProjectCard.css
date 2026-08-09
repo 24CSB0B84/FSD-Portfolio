@@ -1,0 +1,118 @@
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(123, 196, 98, 0.15);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  border-color: rgba(123, 196, 98, 0.45);
+  transform: translateY(-5px);
+}
+
+.project-thumbnail {
+  height: 140px;
+  width: 100%;
+}
+
+.project-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  transition: color 0.3s;
+}
+
+.project-title-link:hover .project-title {
+  color: var(--clr-accent-projects);
+}
+
+.project-card .project-date {
+  font-size: 0.72rem;
+  color: #7a9e70;
+  letter-spacing: 0.06em;
+}
+
+[data-theme="light"] .project-card .project-date {
+  color: #5a8a4e;
+}
+
+/* ── Expandable details ── */
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+  animation: detailsFadeIn 0.3s ease-out;
+}
+
+@keyframes detailsFadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.project-description {
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: #9ab894;
+  margin: 0;
+}
+
+[data-theme="light"] .project-description {
+  color: #4a7a3e;
+}
+
+.project-link {
+  color: var(--clr-accent-projects);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.btn-toggle {
+  background: transparent;
+  color: var(--clr-accent-projects);
+  border: 1px solid var(--clr-accent-projects);
+  border-radius: 8px;
+  padding: 8px 18px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all 0.25s;
+  font-family: var(--font-main);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-top: 6px;
+}
+
+.btn-toggle:hover {
+  background: rgba(123, 196, 98, 0.1);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
