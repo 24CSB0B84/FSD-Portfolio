@@ -1,5 +1,5 @@
 # Portfolio Website
-
+# LAB 1
 A fully responsive personal portfolio website built with semantic HTML5 and vanilla CSS, using Flexbox for layout. The site is a single-page design with smooth-scroll navigation across five content sections: About, Skills, Tools, Projects, and Contact.
 
 ## Design Rationale
@@ -15,13 +15,16 @@ Flexbox is the sole layout mechanism. The hero section centres its content with 
 - The contact form is front-end only; no back-end is connected to process submissions.
 - Project thumbnail images are represented by CSS gradient placeholders rather than real screenshots.
 - The animated GIF background (`wallpaper.gif`) may increase initial page load time on slower connections.
-
+# LAB-2 
+A fully functional React single-page application converted from a static HTML/CSS portfolio. Built with **Vite**, **React 19**, and **react-router-dom** — no class components, no third-party state libraries, no UI frameworks. And the rest of the readme can be found in portfolio-react folder.
 ## File Structure
 
 ```
 web_practice/
+├── portfolio-react — react application of the portfolio
 ├── index.html      — main HTML document
 ├── style.css       — external stylesheet
 ├── wallpaper.gif   — hero background animation
 └── README.md       — this file
+
 ```
