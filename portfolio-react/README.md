@@ -114,7 +114,7 @@ portfolio-react/
 ├── package.json
 └── vite.config.js
 ```
-
+The drive link to the recording of the portfolio website :- https://drive.google.com/drive/folders/1SLTox6fnoT1KdI2nE9XQ-52arP-tZVcr?usp=drive_link
 ---
 
 ## Tech Stack
